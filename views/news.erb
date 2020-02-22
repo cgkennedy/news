@@ -22,11 +22,20 @@
   </head>
   <body>
 
-    <div class = "row">
-            <h1>News</h1>
-            <%=@title%>
-    </div>
 
+<div class="container mt-5">
+       <div class = "row">
+           <div class = "col">
+               <h1>Current Temperature</h1>
+                <p>Temperature: <%=@current_temperature%> </p>
+                <p>Conditions: <%=@current_summary%> </p>
+            </div>
+           
+        </div>
+        
+       
+    </div>
+ 
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
