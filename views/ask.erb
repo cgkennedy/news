@@ -18,44 +18,36 @@
     <!-- Your own CSS -->
     <link rel="stylesheet" href="/styles.css">
 
-    <title>ask</title>
+    <title>Geocoding</title>
   </head>
-  <body>
 
+<body>
 
-    <div class="container mt-5">
-        <h1>Enter a Location</h1>
-            <form action="/news">
-                <input type = "text" name="q">
-                <button type = "submit">Get Forecast and News</submit>
-            </form>   
+ <div class="container mt-5">
+        <h1>News</h1>
     </div>
     <div class="container mt-5">
-        <div class = "row">
-            <div class = "col">
-                <h1>Current Weather</h1>
-                <p>Temperature: <%=@current_temperature%> </p>
-                <p>Conditions: <%=@current_summary%> </p>
-            </div>
-        </div>
-        <div class = "row">
-            <h1>Forecast</h1>
-                <% for forecasttemps in @forecast_temperature %>
-                    <p>Forecast Temperature:</p>
-                        <div class = "col-md-6">
-                            <p>"<%= forecasttemps %>"</p>
-                        </div>
-                <% end %>
-                <% for forecastconds in @forecast_summary %>
-                    <p>Forecast Conditions:</p>
-                        <div class = "col-md-6">
-                            <p>"<%= forecastconds %>"</p>
-                        </div>
-                <% end %>
-        </div>
-       
+        <h2>Please enter a location</h2>
+        <form action ="/news">
+            <input type = "text" name ="q">
+            <button type="submit">Submit</submit>
+        </form>
     </div>
-
+<div>
+        <% if @locationSet then %>
+        <h3>Current Weather</h3>
+        <p><%=@forecast["currently"]["summary"]%> with a temperature of <%=@forecast["currently"]["temperature"]%></p>
+        <h3>Weekly Forecast</h3>
+        <% for day in @forecast["daily"]["data"] %>
+            <p><%=Time.at(day["time"]).strftime("%a")%> - <%= day["summary"]%> High of <%= day["temperatureHigh"]%> and low of <%= day["temperatureLow"]%></p>
+        <% end %>
+        <h3>Top Stories</h3>
+        <% for story in @news["articles"] %>
+            <p><%=story["title"]%> <a href = <%=story["url"]%>>Read More</a></p>
+        <% end %>
+        <% end %>
+</div>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
