@@ -22,8 +22,7 @@
   </head>
 
 <body>
-
- <div class="container mt-5">
+    <div class="container mt-5">
         <h1>News</h1>
     </div>
     <div class="container mt-5">
@@ -33,7 +32,7 @@
             <button type="submit">Submit</submit>
         </form>
     </div>
-<div>
+    <div>
         <% if @locationSet then %>
         <h3>Current Weather</h3>
         <p><%=@forecast["currently"]["summary"]%> with a temperature of <%=@forecast["currently"]["temperature"]%></p>
@@ -46,7 +45,8 @@
             <p><%=story["title"]%> <a href = <%=story["url"]%>>Read More</a></p>
         <% end %>
         <% end %>
-</div>
+    </div>
+</body>
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
