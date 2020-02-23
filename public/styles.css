@@ -1,0 +1,108 @@
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+img {
+    width: auto; 
+    height: 100%;}
+    
+.jumbotron {
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-image: url(car_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 1px black}
+
+.jumbotron-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 0;
+    }
+
+.fas {
+max-width: 80px;
+max-height:80px;
+    }
+.container img {
+        width: auto; 
+        height: 200px;
+    }
+.carousel {
+    min-height: 200px;
+    width: auto;
+}
+.carousel-item {
+    margin: auto;
+    min-height: 800%;
+    width: auto;
+  }
+
+
+.text-center {
+    text-align: center!important;
+}
+
+.rounded float-left img{ 
+    width: auto; 
+    height: 200%;
+}
+.testimonials {
+    background-color: #ff5e5e;
+}
+h1{
+    color:#000000;
+    font-size: 25px;
+    }
+h2{
+    color: #ff0000;
+}
+h3{
+    color:#ffffff;
+    font-size: 100px;
+    text-shadow: 2px 2px 2px black
+}
+
+h4{
+    color: whitesmoke;
+    font-size: 40px;
+
+}
+
+h6{ 
+    color: darkred;
+    font-size: 30px;
+
+}
+
+p {
+    color: black; 
+
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.review_1.jpg {
+    height: 150px; 
+    width: auto;
+}
+.review_2.jpg {
+    height: 150px; 
+    width: auto;
+}
+.review_3.jpg {
+    height: 150px; 
+    width: auto;
+}
+ .footer-brand img {
+    height: 80px;
+    width: auto;
+}
+.form-group {
+    background-color: lightcoral
+}
