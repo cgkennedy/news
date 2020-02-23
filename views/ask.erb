@@ -56,16 +56,37 @@
          </div>
       </div>
 
-        <h3>Weekly Forecast</h3>
-        <% for day in @forecast["daily"]["data"] %>
+<div class="col-md-12 mb-4">
+    <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(42).jpg);">
+
+    <!-- Content -->
+    <div class="text-black text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div>
+            <h1>Forecast</h1>
+            <h3 class="card-title pt-2"><strong>8 Day Outlook</strong></h3>
+             <% for day in @forecast["daily"]["data"] %>
             <p><%=Time.at(day["time"]).strftime("%A, %B %d")%> : <%= day["summary"]%> High temp of <%= day["temperatureHigh"]%> &#176F and low of <%= day["temperatureLow"]%> &#176F </p>  
-        <% end %>
-        <h2>Top News Stories</h2>
+            <% end %>
+        </div>
+    </div>
+    <!-- Content -->
+</div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Latest News
+  </div>
+  <div class="card-body">
+    <h2>Top Story Headlines</h2>
         <% for story in @news["articles"] %>
             <p><%=story["title"]%> <a href = <%=story["url"]%>>--Click For More--</a></p>
         <% end %>
         <% end %>
-    </div>
+  </div>
+</div>
+
+</div>
 </body>
    
     <!-- Optional JavaScript -->

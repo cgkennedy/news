@@ -17,20 +17,18 @@ img {
         border-radius: 0;
     }
 
+.card {
+    background-color: #b5ecf3;
+    background-position: center; /* Center the image */
+    text: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
 .container img {
         width: auto; 
         height: 200px;
     }
-.carousel {
-    min-height: 200px;
-    width: auto;
-}
-.carousel-item {
-    margin: auto;
-    min-height: 800%;
-    width: auto;
-  }
-
 
 .text-center {
     text-align: center!important;
@@ -52,36 +50,12 @@ h3{
 }
 
 h4{
-    color: whitesmoke;
-    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
 
 }
 p {
     color: black; 
+    font-size: 16px;
 
-}
-
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
-.review_1.jpg {
-    height: 150px; 
-    width: auto;
-}
-.review_2.jpg {
-    height: 150px; 
-    width: auto;
-}
-.review_3.jpg {
-    height: 150px; 
-    width: auto;
-}
- .footer-brand img {
-    height: 80px;
-    width: auto;
-}
-.form-group {
-    background-color: lightcoral
 }
