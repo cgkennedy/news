@@ -1,19 +1,14 @@
-.navbar-brand img {
-    height: 40px;
-    width: auto;
-}
-
 img {
     width: auto; 
     height: 100%;}
     
 .jumbotron {
-    min-height: 600px; 
+    min-height: 200px; 
     background-attachment: fixed;
-    background-image: url(car_background.jpg);
+    background-color:rgb(187, 234, 255);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: rgb(129, 196, 228);
     text-shadow: 1px 1px 1px black}
 
 .jumbotron-fluid {
@@ -22,10 +17,6 @@ img {
         border-radius: 0;
     }
 
-.fas {
-max-width: 80px;
-max-height:80px;
-    }
 .container img {
         width: auto; 
         height: 200px;
@@ -45,10 +36,6 @@ max-height:80px;
     text-align: center!important;
 }
 
-.rounded float-left img{ 
-    width: auto; 
-    height: 200%;
-}
 .testimonials {
     background-color: #ff5e5e;
 }
@@ -57,12 +44,11 @@ h1{
     font-size: 25px;
     }
 h2{
-    color: #ff0000;
+    color: #416dfa;
 }
 h3{
-    color:#ffffff;
-    font-size: 100px;
-    text-shadow: 2px 2px 2px black
+    color:#141663;
+    font-size: 25px;
 }
 
 h4{
@@ -70,13 +56,6 @@ h4{
     font-size: 40px;
 
 }
-
-h6{ 
-    color: darkred;
-    font-size: 30px;
-
-}
-
 p {
     color: black; 
 

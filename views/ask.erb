@@ -21,10 +21,11 @@
     <title>Geocoding</title>
   </head>
 
-#<!--Jumbotron-->
+<!--Jumbotron-->
 
 <body>
 <div class="jumbotron jumbotron-fluid">
+
       <div class="container mt-5">
         <h3 class="display-4">
           News & Weather
@@ -45,12 +46,16 @@
     <hr class="my-4">
 </div>
 
-<span class="border border-info"></span>  
-    <div>
+<div class="container">
+      <div class="row">
+        <div class="col text-center">
+        
         <% if @entry then %>
         <h3>Current Conditions</h3>
         <p><%=@forecast["currently"]["summary"]%> with a current temperature of <%=@forecast["currently"]["temperature"]%> &#176F </p>
-     
+         </div>
+      </div>
+
         <h3>Weekly Forecast</h3>
         <% for day in @forecast["daily"]["data"] %>
             <p><%=Time.at(day["time"]).strftime("%A, %B %d")%> : <%= day["summary"]%> High temp of <%= day["temperatureHigh"]%> &#176F and low of <%= day["temperatureLow"]%> &#176F </p>  
